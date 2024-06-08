@@ -20,17 +20,17 @@
               <p>Cantidad:
                 <span class="cantidad">0</span>
                 <button onclick="
-                        document.querySelector('.cantidad').innerHTML = Number(document.querySelector('.cantidad').innerHTML) + 1;
-                        if (Number(document.querySelector('.cantidad').innerHTML) < 0) document.querySelector('.cantidad').innerHTML = 0;
-                        cantidad = Number(document.querySelector('.cantidad').innerHTML);
-                        document.querySelector('.valor-total').innerHTML = cantidad * precio;
-                        ">+</button>
-                <button onclick="
                         document.querySelector('.cantidad').innerHTML = Number(document.querySelector('.cantidad').innerHTML) - 1;
                         if (Number(document.querySelector('.cantidad').innerHTML) < 0) document.querySelector('.cantidad').innerHTML = 0;
                         cantidad = Number(document.querySelector('.cantidad').innerHTML);
                         document.querySelector('.valor-total').innerHTML = cantidad * precio;
-                        ">-</button>
+                    ">-</button>
+                <button onclick="
+                        document.querySelector('.cantidad').innerHTML = Number(document.querySelector('.cantidad').innerHTML) + 1;
+                        if (Number(document.querySelector('.cantidad').innerHTML) < 0) document.querySelector('.cantidad').innerHTML = 0;
+                        cantidad = Number(document.querySelector('.cantidad').innerHTML);
+                        document.querySelector('.valor-total').innerHTML = cantidad * precio;
+                    ">+</button>
               </p>
             </div>
 
